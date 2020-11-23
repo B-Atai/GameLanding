@@ -180,5 +180,7 @@ span {
   display: flex;
   width: 100vw;
   height: 1051px;
+  background-image: url(../images/social-background.png);
+  color: #fff;
 }
 /*# sourceMappingURL=index.css.map */

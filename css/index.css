@@ -28,6 +28,7 @@ span {
   margin: 0 auto;
 }
 
+HEAD
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,6 +44,131 @@ span {
 
 .col-6 {
   width: 50%;
+}
+
+.header {
+  padding: 21px 0;
+  background-color: #333;
+}
+
+.header__spacebetween {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__items {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__icons {
+  margin-left: 24px;
+}
+
+.header__icons a {
+  padding-right: 17px;
+}
+
+.header__icons a:last-child {
+  padding-right: 0;
+}
+
+.nav {
+  min-width: 612px;
+}
+
+.nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.nav__links {
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.languages {
+  position: relative;
+}
+
+.languages::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 30px;
+  right: 0;
+  top: -6px;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.languages__main {
+  margin-right: 36px;
+  position: relative;
+}
+
+.languages__main::before, .languages__main::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  border-radius: 3px;
+  border: 1px solid #FFFFFF;
+  background-color: #fff;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.languages__main::before {
+  right: -14px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.languages__main::after {
+  right: -18px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.languages p {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.languages p:hover {
+  color: #FFB548;
+}
+
+.languages__drop {
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 3px;
+  left: -8px;
+  top: 23px;
+}
+
+.languages__drop p {
+  padding: 5px 20px 5px 8px;
 }
 
 .social {

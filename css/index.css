@@ -2,7 +2,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -27,7 +28,10 @@ span {
   margin: 0 auto;
 }
 
+HEAD
 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -38,19 +42,31 @@ span {
   font-style: normal;
 }
 
+.col-6 {
+  width: 50%;
+}
+
 .header {
   padding: 21px 0;
   background-color: #333;
 }
 
 .header__spacebetween {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__items {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__icons {
@@ -70,8 +86,12 @@ span {
 }
 
 .nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-transform: uppercase;
 }
 
@@ -110,18 +130,21 @@ span {
   border: 1px solid #FFFFFF;
   background-color: #fff;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   cursor: pointer;
 }
 
 .languages__main::before {
   right: -14px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .languages__main::after {
   right: -18px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .languages p {
@@ -146,5 +169,24 @@ span {
 
 .languages__drop p {
   padding: 5px 20px 5px 8px;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 1051px;
+}
+
+.social__subtitle {
+  font-family: "BebasNeueBold";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.social__top {
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=index.css.map */

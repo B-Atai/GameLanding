@@ -1,8 +1,8 @@
 .social{
     display: flex;
-    width: 100vw;
+    
     height: 1051px;   
-    background-image: url(../images/social-background.png);  
+    background: url(../images/social-background.png);  
     color: $color-white;
     letter-spacing: 2px;
     
@@ -29,11 +29,15 @@
              position: absolute;
              width: 711.5px;
              height: 2.99px;
-            
+            z-index: 1;
              background: #FFFFFF;
              border-radius: 4px;             
         }
 
+    }
+    img{
+        width: 100%;
+        padding-top: 190px;
     }
 
 }

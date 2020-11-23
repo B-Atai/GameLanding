@@ -28,11 +28,14 @@ span {
   margin: 0 auto;
 }
 
-HEAD
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.col-6 {
+  width: 50%;
 }
 
 @font-face {
@@ -177,16 +180,5 @@ HEAD
   display: flex;
   width: 100vw;
   height: 1051px;
-}
-
-.social__subtitle {
-  font-family: "BebasNeueBold";
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 24px;
-}
-
-.social__top {
-  text-transform: uppercase;
 }
 /*# sourceMappingURL=index.css.map */

@@ -38,9 +38,12 @@ span {
   font-style: normal;
 }
 
+.col-6 {
+  width: 50%;
+}
+
 .header {
   padding: 21px 0;
-  background-color: #333;
 }
 
 .header__spacebetween {
@@ -92,7 +95,7 @@ span {
   width: 1px;
   height: 30px;
   right: 0;
-  top: -6px;
+  top: -2px;
   background-color: #fff;
   opacity: 0.5;
 }
@@ -142,5 +145,99 @@ span {
 
 .languages__drop span {
   padding: 5px 20px 5px 8px;
+}
+
+.hero {
+  background-image: url("../../images/header-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  min-height: 960px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__items {
+  text-align: center;
+}
+
+.hero__title {
+  font-family: "BebasNeueBold";
+  font-size: 80px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+}
+
+.hero__description {
+  font-family: "BebasNeueBold";
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  padding: 21px 0 38px;
+}
+
+.hero__btn {
+  color: #fff;
+  background-color: #FFB548;
+  padding: 18px 16px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  position: relative;
+}
+
+.hero__btn span {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 700;
+  color: #1A1917;
+}
+
+.hero__btn--line {
+  padding-right: 26px;
+}
+
+.hero__btn--line::before {
+  content: '';
+  position: absolute;
+  right: 82px;
+  top: 16px;
+  width: 1px;
+  height: 30px;
+  background-color: #1A1917;
+  opacity: 0.5;
+  transform: rotate(-10deg);
+}
+
+.hero__btn:hover {
+  background-color: #1A1917;
+}
+
+.hero__btn:hover span,
+.hero__btn:hover .hero__btn--line {
+  color: #FFB548;
+}
+
+.social {
+  display: flex;
+  width: 100vw;
+  height: 1051px;
+}
+
+.social__subtitle {
+  font-family: "BebasNeueBold";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.social__top {
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=index.css.map */

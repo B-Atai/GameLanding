@@ -1,6 +1,5 @@
 .header{
     padding: 21px 0;
-    background-color: #333;
     &__spacebetween{
         display: flex;
         justify-content: space-between;
@@ -41,7 +40,7 @@
         width: 1px;
         height: 30px;
         right: 0;
-        top: -6px;
+        top: -2px;
         background-color: $color-white;
         opacity: 0.5;
     }

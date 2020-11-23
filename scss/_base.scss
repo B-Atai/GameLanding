@@ -6,6 +6,7 @@
 
   body {
     font-family: "Open Sans", sans-serif;
+    // background-color: $color-black;
   }
   
   li {
@@ -24,4 +25,8 @@
   .container {
     max-width: 1160px;
     margin: 0 auto;
+  }
+
+  .row{
+    display: flex;
   }

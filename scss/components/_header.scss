@@ -1,0 +1,90 @@
+.header{
+    padding: 21px 0;
+    background-color: #333;
+    &__spacebetween{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__items{
+        align-items: center;
+    }
+    &__icons{
+        margin-left: 24px;
+    }
+    &__icons a{
+        padding-right: 17px;
+    }
+    &__icons a:last-child{
+        padding-right: 0;
+    }
+}
+
+.nav{
+    min-width: 612px;
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+    }
+    &__links{
+        @include font($font-open, 12px);
+        color: $color-white;
+    }
+}
+
+.languages{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 30px;
+        right: 0;
+        top: -6px;
+        background-color: $color-white;
+        opacity: 0.5;
+    }
+    &__main{
+        margin-right: 36px;
+        position: relative;
+    }
+    &__main::before,
+    &__main::after{
+        content: '';
+        position: absolute;
+        width: 6px;
+        border-radius: 3px;
+        border: 1px solid #FFFFFF;
+        background-color: $color-white;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+    &__main::before{
+        right: -14px;
+        transform:rotate(45deg);
+    }
+    &__main::after{
+        right: -18px;
+        transform:rotate(-45deg);
+    }
+    p{
+        color: $color-white;
+        @include font($font-open, 12px);
+        &:hover{
+            color: $color-orange
+        }
+    }
+    &__drop{
+        display: none;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.75);
+        border-radius: 3px;
+        left: -8px;
+        top: 23px;
+    }
+    &__drop p{
+        padding: 5px 20px 5px 8px;
+    }
+}

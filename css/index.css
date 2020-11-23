@@ -182,5 +182,43 @@ span {
   height: 1051px;
   background-image: url(../images/social-background.png);
   color: #fff;
+  letter-spacing: 2px;
+}
+
+.social__subtitle {
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 255px;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+
+.social__title {
+  font-family: "Open Sans";
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+.social__description {
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  margin: 50px 70px;
+  line-height: 22px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.social__description::before {
+  content: '';
+  position: absolute;
+  width: 711.5px;
+  height: 2.99px;
+  background: #FFFFFF;
+  border-radius: 4px;
 }
 /*# sourceMappingURL=index.css.map */

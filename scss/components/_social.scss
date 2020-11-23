@@ -29,7 +29,7 @@
              position: absolute;
              width: 711.5px;
              height: 2.99px;
-            
+            z-index: 1;
              background: #FFFFFF;
              border-radius: 4px;             
         }
@@ -37,6 +37,7 @@
     }
     img{
         width: 100%;
+        padding-top: 190px;
     }
 
 }

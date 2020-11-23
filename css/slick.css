@@ -10,7 +10,7 @@
 }
 /* Лента слайдов */
 .slick-track{
-   
+   display: flex;
 }
 /* Слайд */
 .slick-slide{}
@@ -39,6 +39,28 @@
 .slick-dots li button{}
 
 
-.slider{}
-.slider.slick-arrow{}
-.slider__item{}
+.slider{
+    position: relative;
+
+}
+.slick-arrow{
+   
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 50px;
+    border: none;
+}
+.slick-arrow.slick-prev{
+    
+   right: 0;
+   width: 0;
+    
+}
+.slick-arrow.slick-next{
+    left: 700px;
+    background: url(../images/switch.svg) 0 0 no-repeat;
+    border: none;
+}

@@ -25,7 +25,7 @@ span {
 
 .container {
   max-width: 1160px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .row {
@@ -178,9 +178,8 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
   height: 1051px;
-  background-image: url(../images/social-background.png);
+  background: url(../images/social-background.png);
   color: #fff;
   letter-spacing: 2px;
 }

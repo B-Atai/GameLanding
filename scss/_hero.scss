@@ -1,0 +1,13 @@
+.social{
+    display: flex;
+    width: 100vw;
+    height: 1051px;
+   // color: $color-white;//
+    &__subtitle{
+        @include font($font-babue, 24px, 700);
+        line-height: 24px;
+    }
+    &__top{
+        text-transform: uppercase;
+    }
+}

@@ -124,15 +124,11 @@ span {
   transform: rotate(-45deg);
 }
 
-.languages p {
+.languages span {
   color: #fff;
   font-family: "Open Sans";
   font-size: 12px;
   font-weight: 700;
-}
-
-.languages p:hover {
-  color: #FFB548;
 }
 
 .languages__drop {
@@ -144,7 +140,7 @@ span {
   top: 23px;
 }
 
-.languages__drop p {
+.languages__drop span {
   padding: 5px 20px 5px 8px;
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,6 +1,5 @@
 .header{
     padding: 21px 0;
-    background-color: #333;
     &__spacebetween{
         display: flex;
         justify-content: space-between;
@@ -41,7 +40,7 @@
         width: 1px;
         height: 30px;
         right: 0;
-        top: -6px;
+        top: -2px;
         background-color: $color-white;
         opacity: 0.5;
     }
@@ -69,12 +68,9 @@
         right: -18px;
         transform:rotate(-45deg);
     }
-    p{
+    span{
         color: $color-white;
         @include font($font-open, 12px);
-        &:hover{
-            color: $color-orange
-        }
     }
     &__drop{
         display: none;
@@ -84,7 +80,7 @@
         left: -8px;
         top: 23px;
     }
-    &__drop p{
+    &__drop span{
         padding: 5px 20px 5px 8px;
     }
 }

@@ -24,11 +24,15 @@ span {
 
 .container {
   max-width: 1160px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .row {
   display: flex;
+}
+
+.slider {
+  min-width: 0;
 }
 
 @font-face {
@@ -246,18 +250,70 @@ span {
 
 .social {
   display: flex;
-  width: 100vw;
   height: 1051px;
+  background: url(../images/social-background.png);
+  color: #fff;
+  letter-spacing: 2px;
 }
 
 .social__subtitle {
-  font-family: "BebasNeueBold";
+  font-family: "Open Sans";
   font-size: 24px;
   font-weight: 700;
+  padding-top: 295px;
+  text-transform: uppercase;
   line-height: 24px;
 }
 
-.social__top {
+.social__title {
+  font-family: "Open Sans";
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
   text-transform: uppercase;
+  position: relative;
+}
+
+.social__title::before {
+  content: '';
+  position: absolute;
+  width: 730.5px;
+  height: 2.99px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  bottom: -30px;
+  left: 0;
+  z-index: 2;
+}
+
+.social__description {
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  padding: 80px;
+  line-height: 22px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.social__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.social img {
+  min-height: 100%;
+  padding-top: 190px;
+  width: 100%;
+}
+
+.social img {
+  width: 100%;
+  padding-top: 190px;
 }
 /*# sourceMappingURL=index.css.map */

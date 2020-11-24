@@ -1,13 +1,56 @@
 .social{
     display: flex;
-    width: 100vw;
-    height: 1051px;
-   // color: $color-white;//
+    
+    height: 1051px;   
+    background: url(../images/social-background.png);  
+    color: $color-white;
+    letter-spacing: 2px;
+    
     &__subtitle{
-        @include font($font-babue, 24px, 700);
-        line-height: 24px;
-    }
-    &__top{
+        @include font($font-open, 24px, 700);
+        padding-top: 295px;
         text-transform: uppercase;
+        line-height: 24px;
+       
     }
+    &__title{
+        @include font($font-open, 60px, 700);
+        line-height: 60px;  
+        text-transform: uppercase;  
+        position: relative;
+        &::before{
+            content: '';
+             position: absolute;
+             width: 730.5px;
+             height: 2.99px;
+             background: #FFFFFF;
+             border-radius: 4px;   
+             bottom: -30px;
+             left: 0;
+             z-index: 2;
+        }
+
+         
+    }
+    &__description{
+        @include font($font-open, 18px, 400);
+        padding: 80px;
+        line-height: 22px;
+        justify-content: flex-end;
+       
+    }
+    &__bottom{
+        display: flex;
+        justify-content: flex-end;
+    }
+    img{
+        min-height: 100%;
+        padding-top: 190px;
+        width: 100%;
+    }
+    img{
+        width: 100%;
+        padding-top: 190px;
+    }
+
 }

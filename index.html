@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,40 +9,40 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/slick.css">
 </head>
-<body>
 
-<header class="header">
-    <div class="container">
-        <div class="row header__spacebetween">
-            <div class="header__logo">
-                <img src="./images/logo.svg" alt="logo">
-            </div>
-            <nav class="header__nav nav">
-                <ul class="nav__menu row">
-                    <li><a href="#" class="nav__links">MAIN</a></li>
-                    <li><a href="#" class="nav__links">about</a></li>
-                    <li><a href="#" class="nav__links">game features</a></li>
-                    <li><a href="#" class="nav__links">System requirements</a></li>
-                    <li><a href="#" class="nav__links">quotes</a></li>
-                </ul>
-            </nav>
-            <div class="header__items row">
-                <div class="header__languages languages">
-                    <p class="languages__main">ENG</p>
-                    <div class="languages__drop">
-                        <p>RUS</p>
-                        <p>FRA</p>
-                        <p>DEU</p>
-                    </div>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row header__spacebetween">
+                <div class="header__logo">
+                    <img src="./images/logo.svg" alt="logo">
                 </div>
-                <div class="header__icons">
-                    <a href="#"><img src="./images/xbox.svg" alt="xbox"></a>
-                    <a href="#"><img src="./images/steam.svg" alt="steam"></a>
+                <nav class="header__nav nav">
+                    <ul class="nav__menu row">
+                        <li><a href="#" class="nav__links">MAIN</a></li>
+                        <li><a href="#" class="nav__links">about</a></li>
+                        <li><a href="#" class="nav__links">game features</a></li>
+                        <li><a href="#" class="nav__links">System requirements</a></li>
+                        <li><a href="#" class="nav__links">quotes</a></li>
+                    </ul>
+                </nav>
+                <div class="header__items row">
+                    <div class="header__languages languages">
+                        <a href="#" class="languages__main" id='langItems'><span>ENG</span></a>
+                        <div class="languages__drop is-off" id="dropItem">
+                            <a href="#"><span>RUS</span></a>
+                            <a href="#"><span>FRA</span></a>
+                            <a href="#"><span>DEU</span></a>
+                        </div>
+                    </div>
+                    <div class="header__icons">
+                        <a href="#"><img src="./images/xbox.svg" alt="xbox"></a>
+                        <a href="#"><img src="./images/steam.svg" alt="steam"></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
     <main>
         <section class="social">
             <div class="container row">
@@ -104,4 +105,5 @@
     <script src="./js/slick.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
+
 </html>

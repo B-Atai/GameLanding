@@ -83,6 +83,11 @@ span {
   font-size: 12px;
   font-weight: 700;
   color: #fff;
+  transition: 0.3s;
+}
+
+.nav__links:hover {
+  color: #FFB548;
 }
 
 .languages {
@@ -132,6 +137,11 @@ span {
   font-family: "Open Sans";
   font-size: 12px;
   font-weight: 700;
+  transition: 0.3s;
+}
+
+.languages span:hover {
+  color: #FFB548;
 }
 
 .languages__drop {
@@ -142,7 +152,11 @@ span {
   top: 23px;
 }
 
-.languages .is-off {
+.languages__drop.is-on {
+  display: block;
+}
+
+.languages__drop.is-off {
   display: none;
 }
 
@@ -193,6 +207,7 @@ span {
   border: 1px solid transparent;
   border-radius: 4px;
   position: relative;
+  transition: 0.3s;
 }
 
 .hero__btn span {
@@ -200,10 +215,12 @@ span {
   font-size: 16px;
   font-weight: 700;
   color: #1A1917;
+  transition: 0.3s;
 }
 
 .hero__btn--line {
   padding-right: 26px;
+  transition: 0.3s;
 }
 
 .hero__btn--line::before {

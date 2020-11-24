@@ -29,6 +29,10 @@
     &__links{
         @include font($font-open, 12px);
         color: $color-white;
+        transition: 0.3s;
+        &:hover{
+            color: $color-orange;
+        }
     }
 }
 
@@ -44,6 +48,7 @@
         background-color: $color-white;
         opacity: 0.5;
     }
+
     &__main{
         margin-right: 36px;
         position: relative;
@@ -71,7 +76,12 @@
     span{
         color: $color-white;
         @include font($font-open, 12px);
+        transition: 0.3s;
+        &:hover{
+            color: $color-orange;
+        }
     }
+
     &__drop{
         position: absolute;
         background: rgba(0, 0, 0, 0.75);
@@ -85,7 +95,6 @@
             display: none;
         }
     }
-    
     &__drop span{
         padding: 5px 20px 5px 8px;
     }

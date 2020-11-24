@@ -24,11 +24,14 @@
   
   .container {
     max-width: 1160px;
-    margin: 0 auto;
+    margin: auto ;
   }
 
 
   .row{
     display: flex;
   }
-
+ 
+  .slider{
+    min-width: 0;
+  }

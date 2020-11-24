@@ -135,12 +135,15 @@ span {
 }
 
 .languages__drop {
-  display: none;
   position: absolute;
   background: rgba(0, 0, 0, 0.75);
   border-radius: 3px;
   left: -8px;
   top: 23px;
+}
+
+.languages .is-off {
+  display: none;
 }
 
 .languages__drop span {

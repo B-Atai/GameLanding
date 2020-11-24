@@ -2,11 +2,11 @@ const langbtn = document.getElementById("langItems");
 const dropitem = document.getElementById("dropItem")
 function drop() {
     langbtn.addEventListener('click', function (){
-        langbtn.classList.toggle('is-on')
-        function on(){
-            dropitem.style.display = ('block')
-        }
-        on()
+        dropitem.classList.toggle('is-on')
     });
+    langbtn.addEventListener('click', function (){
+        dropitem.classList.toggle('is-off')
+    });
+    
 };
 drop()

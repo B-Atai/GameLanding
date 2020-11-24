@@ -73,13 +73,19 @@
         @include font($font-open, 12px);
     }
     &__drop{
-        display: none;
         position: absolute;
         background: rgba(0, 0, 0, 0.75);
         border-radius: 3px;
         left: -8px;
         top: 23px;
+        &.is-on{
+            display: block;
+            }
+        &.is-off{
+            display: none;
+        }
     }
+    
     &__drop span{
         padding: 5px 20px 5px 8px;
     }

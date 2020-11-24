@@ -188,7 +188,7 @@ span {
   font-family: "Open Sans";
   font-size: 24px;
   font-weight: 700;
-  padding-top: 255px;
+  padding-top: 295px;
   text-transform: uppercase;
   line-height: 24px;
 }
@@ -199,31 +199,44 @@ span {
   font-weight: 700;
   line-height: 60px;
   text-transform: uppercase;
+  position: relative;
+}
+
+.social__title::before {
+  content: '';
+  position: absolute;
+  width: 730.5px;
+  height: 2.99px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  bottom: -30px;
+  left: 0;
+  z-index: 2;
 }
 
 .social__description {
   font-family: "Open Sans";
   font-size: 18px;
   font-weight: 400;
-  margin: 50px 70px;
+  padding: 80px;
   line-height: 22px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
-.social__description::before {
-  content: '';
-  position: absolute;
-  width: 711.5px;
-  height: 2.99px;
-  z-index: 1;
-  background: #FFFFFF;
-  border-radius: 4px;
+.social__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .social img {
-  width: 100%;
+  min-height: 100%;
   padding-top: 190px;
+  width: 100%;
 }
 /*# sourceMappingURL=index.css.map */

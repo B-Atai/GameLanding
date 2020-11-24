@@ -8,7 +8,7 @@
     
     &__subtitle{
         @include font($font-open, 24px, 700);
-        padding-top: 255px;
+        padding-top: 295px;
         text-transform: uppercase;
         line-height: 24px;
        
@@ -17,27 +17,36 @@
         @include font($font-open, 60px, 700);
         line-height: 60px;  
         text-transform: uppercase;  
+        position: relative;
+        &::before{
+            content: '';
+             position: absolute;
+             width: 730.5px;
+             height: 2.99px;
+             background: #FFFFFF;
+             border-radius: 4px;   
+             bottom: -30px;
+             left: 0;
+             z-index: 2;
+        }
+
          
     }
     &__description{
         @include font($font-open, 18px, 400);
-        margin: 50px 70px;
+        padding: 80px;
         line-height: 22px;
         justify-content: flex-end;
-        &::before{
-            content: '';
-             position: absolute;
-             width: 711.5px;
-             height: 2.99px;
-            z-index: 1;
-             background: #FFFFFF;
-             border-radius: 4px;             
-        }
-
+       
+    }
+    &__bottom{
+        display: flex;
+        justify-content: flex-end;
     }
     img{
-        width: 100%;
+        min-height: 100%;
         padding-top: 190px;
+        width: 100%;
     }
 
 }

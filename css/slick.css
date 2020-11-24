@@ -63,11 +63,14 @@
     border: none;
 }
 .slick-dots{
-    
-  
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+ 
 }
 .slick-dots li{
     list-style: none;
@@ -75,6 +78,7 @@
 }
 /* Активная точка */
 .slick-dots li.slick-active{
+    position: relative;
     font-size: 0;
     width: 20px;
     height: 20px;
@@ -82,15 +86,17 @@
     border-radius: 50%;
     
 }
-.slick-dots li button::before{
+.slick-dots li.slick-active::before{
     content: '';
     position: absolute;
     width: 32.16px;
-    height: 0px;
-   
-    top: 790.47px;
-    border: 1px solid #FFFFFF     
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    border: 1px solid #FFFFFF  
 }
+ 
+
 /* Элемент точки */
 .slick-dots li button{
     font-size: 0;
@@ -101,4 +107,4 @@
     border-radius: 50%;
 }
 
-.slider__item{}
+

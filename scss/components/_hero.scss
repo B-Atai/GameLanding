@@ -32,12 +32,15 @@
         border: 1px solid transparent;
         border-radius: 4px;
         position: relative;
+        transition: 0.3s;
         span{
             @include font($font-open, 16px);
             color: #1A1917;
+            transition: 0.3s;
         }
         &--line{
             padding-right: 26px;
+            transition: 0.3s;
             &::before{
                 content: '';
                 position: absolute;

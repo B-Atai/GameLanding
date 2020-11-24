@@ -47,6 +47,8 @@ span {
 }
 
 .header {
+  position: absolute;
+  width: 100%;
   padding: 21px 0;
 }
 
@@ -173,7 +175,6 @@ span {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
@@ -292,18 +293,12 @@ span {
   font-weight: 400;
   padding: 80px;
   line-height: 22px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .social__bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .social img {

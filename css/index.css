@@ -42,6 +42,10 @@ span {
   font-style: normal;
 }
 
+.col-5 {
+  width: 41.7%;
+}
+
 .col-6 {
   width: 50%;
 }
@@ -174,7 +178,6 @@ span {
   background-image: url("../../images/header-background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   left: 0;
   top: 0;
   width: 100%;
@@ -311,4 +314,98 @@ span {
   width: 100%;
   padding-top: 190px;
 }
-/*# sourceMappingURL=index.css.map */
+
+.features {
+  background-image: url("../../images/features.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 870px;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.features__items {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.features__subtitle {
+  font-family: "BebasNeueBold";
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.features__title {
+  font-family: "BebasNeueBold";
+  font-size: 80px;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 85px;
+}
+
+.accordeon__items {
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.accordeon__title {
+  font-family: "BebasNeueBold";
+  font-size: 36px;
+  font-weight: 700;
+  color: #FFB548;
+  position: relative;
+}
+
+.accordeon__title::before {
+  content: '';
+  position: absolute;
+  left: -32px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 13px;
+  height: 13px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.accordeon__title::after {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  height: 160px;
+  width: 3px;
+  top: 20px;
+  left: -26px;
+  background-color: #fff;
+}
+
+.accordeon__description {
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.accordeon .is-disable {
+  height: 0;
+  overflow: hidden;
+}
+
+.accordeon .is-active {
+  height: auto;
+  animation: 1s textdrop 0s ease-in-out;
+}
+
+.accordeon .is-active::before {
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+}
+
+.accordeon .is-active::after {
+  opacity: 1;
+  animation: 1s linedrop 0s forwards;
+}

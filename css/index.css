@@ -357,6 +357,11 @@ span {
   font-weight: 700;
   color: #FFB548;
   position: relative;
+  transition: 0.3s;
+}
+
+.accordeon__title:hover {
+  color: #fff;
 }
 
 .accordeon__title::before {
@@ -396,16 +401,12 @@ span {
 
 .accordeon .is-active {
   height: auto;
-  animation: 1s textdrop 0s ease-in-out;
 }
 
 .accordeon .is-active::before {
-  top: 50%;
-  transform: translateY(-50%);
   background-color: #fff;
 }
 
 .accordeon .is-active::after {
   opacity: 1;
-  animation: 1s linedrop 0s forwards;
 }

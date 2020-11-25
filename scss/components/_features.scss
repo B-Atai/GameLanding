@@ -21,6 +21,7 @@
         color: $color-white;
         padding-bottom: 85px;
     }
+    
 }
 
 .accordeon{
@@ -32,6 +33,10 @@
         @include font($font-babue,36px);
         color: $color-orange;
         position: relative;
+        transition: 0.3s;
+        &:hover{
+            color: $color-white;
+        }
         &::before{
             content: '';
             position: absolute;
@@ -64,16 +69,17 @@
     }
     .is-active{
         height: auto;
-        animation: 1s textdrop 0s ease-in-out;
+        // animation: 1s textdrop 0s ease-in-out;
         &::before{
-            top: 50%;
-            transform: translateY(-50%);
+            // top: 50%;
+            // transform: translateY(-50%);
             background-color: $color-white;
         }
         &::after{
             opacity: 1;
-            animation: 1s linedrop 0s forwards;
+            // animation: 1s linedrop 0s forwards;
         }
+
         // @keyframes linedrop {
         //     0%{
         //         height: 0px;

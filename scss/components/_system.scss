@@ -1,6 +1,6 @@
 .system{
     display: flex;
-    background: url(../images/requirements.png) center  no-repeat ;
+    background: url('../images/requirements.png') center  no-repeat ;
     background-size: cover;
     min-height: 960px;
     &__top{
@@ -14,7 +14,21 @@
     &__content{
         width: 55%;
         padding-top: 145px;
-       
+        .col-12{
+            position: relative;
+            &::before{
+                content: '';
+                width: 100px;
+                height: 20px;
+                bottom: -12px;
+                border: 2px solid $color-white;
+                left: 66px;
+                position: absolute;
+                z-index: 1;
+                clip-path: polygon(10% 0, 90% 0, 100% 50%, 70% 50%, 31% 50%, 0% 50%);
+                // clip-path: polygon(7% 0, 93% 0, 100% 50%, 0 50%);
+            }
+        }
     }
     &__subtitle{
     font-size: 24px;
@@ -24,14 +38,10 @@
         font-size: 80px;
         line-height: 80px;
     }
-
-   
     &__columns{
         border: 1px solid #97979773;
         padding: 15px 10px;        
         box-sizing: border-box;
-       
-       
     }
     &--title{
         font-family: $font-babue;

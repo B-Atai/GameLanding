@@ -1,8 +1,21 @@
 .quotess{
     min-height: 960px;
-    background-color: $color-black;
+    // background-image: url("../../images/quotess_bg.png");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // position: relative;
     display: flex;
     align-items: center;
+    background-color: $color-black;
+    // &::before{
+    //     content: '';
+    //     position: absolute;
+    //     height: 100%;
+    //     width: 100%;
+    //     background-color: $color-black;
+    //     opacity: 0.9;
+    //     z-index: -1;
+    // }
     &__items{
         &--left{
             display: block;

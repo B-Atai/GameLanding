@@ -10,16 +10,21 @@ function drop() {
     
 };
 drop();
-
 const accordeon = () => {
     const accordeonBtn = document.querySelectorAll(".accordeon__items");
     const accordeonItem = document.querySelectorAll(".accordeon__description");
     const accordeonPoint = document.querySelectorAll(".accordeon__title");
     accordeonBtn.forEach((item,i) =>{
         item.addEventListener('click', function (){
-            accordeonPoint[i].classList.toggle('is-active')
-            accordeonItem[i].classList.toggle('is-active')
-        }); 
-    })
-}
-accordeon();
+            if (i != accordeonBtn.length - 1) {
+                accordeonPoint[i].classList.toggle('is-white')
+                accordeonItem[i].classList.toggle('is-active')
+                }
+            else if ((i == accordeonBtn.length - 1)){
+                accordeonItem[i].classList.toggle('is-active')
+                accordeonPoint[i].classList.toggle('is-point')
+            }
+            });
+        })
+    }
+    accordeon();

@@ -1,6 +1,5 @@
 .social{
     display: flex;
-    
     height: 1051px;   
     background: url(../images/social-background.png);  
     color: $color-white;
@@ -13,6 +12,7 @@
         line-height: 24px;
        
     }
+    
     &__title{
         @include font($font-open, 60px, 700);
         line-height: 60px;  
@@ -29,7 +29,6 @@
              left: 0;
              z-index: 2;
         }
-
          
     }
     &__description{

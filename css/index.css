@@ -69,8 +69,6 @@ span {
 
 .col-12 {
   width: 100%;
-  border: 1px solid transparent;
-  border-radius: 0 0 20px 0;
 }
 
 .header {
@@ -651,6 +649,8 @@ span {
   position: absolute;
   top: 30px;
   right: 20px;
+  font-size: 18px;
+  color: #fff;
   opacity: 0.21;
 }
 
@@ -764,13 +764,11 @@ span {
 }
 
 .footer__input:hover {
-  background: #FFB548;
   cursor: pointer;
-  border: 1px solid transparent;
 }
 
 .footer__input:hover::placeholder {
-  color: #080A0B;
+  color: #fff;
 }
 
 .footer__submit {
@@ -789,7 +787,7 @@ span {
 .footer__submit:hover {
   background-color: #FFB548;
   cursor: pointer;
-  color: #fff;
+  color: #080A0B;
   transition: 0.5s;
 }
 
@@ -801,8 +799,22 @@ span {
   padding-bottom: 30px;
 }
 
-.footer__icons {
-  margin-left: 30px;
+.footer__link {
+  margin-right: 40px;
+}
+
+.footer__link:last-child {
+  margin-right: 0;
+}
+
+.footer__items .fa {
+  font-size: 20px;
+  color: #fff;
+  opacity: 0.2;
+}
+
+.footer__items .fa:hover {
+  opacity: 1;
 }
 
 .footer__privacy {

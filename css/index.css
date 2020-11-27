@@ -290,7 +290,6 @@ span {
   font-weight: 700;
   padding-top: 295px;
   text-transform: uppercase;
-  line-height: 24px;
 }
 
 .social__title {
@@ -305,7 +304,7 @@ span {
 .social__title::before {
   content: '';
   position: absolute;
-  width: 730.5px;
+  width: 460px;
   height: 2.99px;
   background: #FFFFFF;
   border-radius: 4px;

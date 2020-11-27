@@ -4,39 +4,20 @@
     background-size: cover;
     min-height: 960px;
     &__top{
-        font-family: $font-babue;
         text-transform: uppercase;
         color: $color-white;
-        letter-spacing: 2px;
         text-align: center;
         margin-top: -250px;
     }
     &__content{
-        width: 55%;
+        width: 50%;
         padding-top: 145px;
-        .col-12{
-            position: relative;
-            &::before{
-                content: '';
-                width: 100px;
-                height: 20px;
-                bottom: -12px;
-                border: 2px solid $color-white;
-                left: 66px;
-                position: absolute;
-                z-index: 1;
-                clip-path: polygon(10% 0, 90% 0, 100% 50%, 70% 50%, 31% 50%, 0% 50%);
-                // clip-path: polygon(7% 0, 93% 0, 100% 50%, 0 50%);
-            }
-        }
     }
     &__subtitle{
-    font-size: 24px;
-   
+        @include font($font-babue, 24px);
     }  
     &__title{
-        font-size: 80px;
-        line-height: 80px;
+        @include font($font-babue, 80px);
     }
     &__columns{
         border: 1px solid #97979773;
@@ -44,11 +25,8 @@
         box-sizing: border-box;
     }
     &--title{
-        font-family: $font-babue;
-        font-size: 24px;
-        font-weight: bold;
+        @include font($font-babue, 24px);
         color: $color-orange;
-        line-height: 24px;
         letter-spacing: 2px;
         text-transform: uppercase;
     }
@@ -56,7 +34,6 @@
         @include font($font-open, 18px, 400);
         padding: 10px 0;
         color: $color-white;
-        line-height: 22px;
     }
 }
 

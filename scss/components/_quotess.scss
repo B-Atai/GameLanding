@@ -1,21 +1,8 @@
 .quotess{
     min-height: 960px;
-    // background-image: url("../../images/quotess_bg.png");
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // position: relative;
     display: flex;
     align-items: center;
     background-color: $color-black;
-    // &::before{
-    //     content: '';
-    //     position: absolute;
-    //     height: 100%;
-    //     width: 100%;
-    //     background-color: $color-black;
-    //     opacity: 0.9;
-    //     z-index: -1;
-    // }
     &__items{
         &--left{
             display: block;
@@ -53,6 +40,7 @@
         &:hover{
             background-color: $color-black;
             color: $color-orange;
+            border: 1px solid $color-orange;
         }
     }
     &__block{
@@ -107,12 +95,15 @@
         @include font($font-open, 18px, 500);
         color: $color-white;
         opacity: 0.5;
-        
     }
     &__icon{
         position: absolute;
         top: 30px;
         right: 20px;
+        opacity: 0.21;;
+        &:hover{
+            opacity: 1;
+        }
     }
     &__quote{
         @include font($font-open, 18px, 500);

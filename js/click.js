@@ -1,5 +1,5 @@
 const langbtn = document.getElementById("langItems");
-const dropitem = document.getElementById("dropItem");
+const dropitem = document.getElementById("dropItem")
 function drop() {
     langbtn.addEventListener('click', function (){
         dropitem.classList.toggle('is-on')
@@ -27,4 +27,4 @@ const accordeon = () => {
             });
         })
     }
-    accordeon();
+accordeon();

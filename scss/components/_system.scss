@@ -1,41 +1,32 @@
 .system{
     display: flex;
-    background: url(../images/requirements.png) center  no-repeat ;
+    background: url('../images/requirements.png') center  no-repeat ;
     background-size: cover;
     min-height: 960px;
     &__top{
-        font-family: $font-babue;
         text-transform: uppercase;
         color: $color-white;
-        letter-spacing: 2px;
         text-align: center;
         margin-top: -250px;
     }
     &__content{
-        width: 55%;
+        width: 50%;
         padding-top: 145px;
-       
     }
     &__subtitle{
-    font-size: 24px;
-   
+        @include font($font-babue, 24px);
     }  
     &__title{
-        font-size: 80px;
-        line-height: 80px;
+        @include font($font-babue, 80px);
     }
-
-   
     &__columns{
         border: 1px solid #97979773;
         padding: 15px 10px;        
         box-sizing: border-box;
-       
     }
     &--title{
-        @include font($font-babue, 24px, 400);
+        @include font($font-babue, 24px);
         color: $color-orange;
-        line-height: 24px;
         letter-spacing: 2px;
         text-transform: uppercase;
     }
@@ -43,7 +34,6 @@
         @include font($font-open, 18px, 400);
         padding: 10px 0;
         color: $color-white;
-        line-height: 22px;
     }
 }
 

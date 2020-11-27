@@ -1,8 +1,8 @@
 .quotess{
     min-height: 960px;
-    background-color: $color-black;
     display: flex;
     align-items: center;
+    background-color: $color-black;
     &__items{
         &--left{
             display: block;
@@ -40,6 +40,7 @@
         &:hover{
             background-color: $color-black;
             color: $color-orange;
+            border: 1px solid $color-orange;
         }
     }
     &__block{
@@ -94,12 +95,15 @@
         @include font($font-open, 18px, 500);
         color: $color-white;
         opacity: 0.5;
-        
     }
     &__icon{
         position: absolute;
         top: 30px;
         right: 20px;
+        opacity: 0.21;;
+        &:hover{
+            opacity: 1;
+        }
     }
     &__quote{
         @include font($font-open, 18px, 500);

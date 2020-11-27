@@ -65,10 +65,12 @@
       outline: none;
       border-radius: 5px;
       &:hover{
+        background: $color-orange;
          cursor: pointer;
+          border: 1px solid transparent;
       }
       &:hover::placeholder{
-         color: $color-white;
+         color: $color-black;
       }
      }
      &__submit{
@@ -83,7 +85,7 @@
       &:hover{
          background-color: $color-orange;
          cursor: pointer;
-         color: $color-black;
+         color: $color-white;
          transition: 0.5s;
       }
      
@@ -97,40 +99,10 @@
           padding-bottom: 30px;
           
        }
-      
     }
-    &__items{
-       svg{
-           margin-left: 40px;
-           fill: white;
-           opacity: 0.2;
-           &:nth-child(1){
-            &:hover {
-               opacity: 1;
-             }
-           }
-           opacity: 0.2;
-           &:nth-child(2){
-            &:hover {
-               opacity: 1;
-             }
-           }
-           opacity: 0.2;
-           &:nth-child(3){
-            &:hover {
-               opacity: 1;
-             }
-           }
-           opacity: 0.2;
-           &:nth-child(4){
-            &:hover {
-               opacity: 1;
-             }
-           }
-       }
-       
+    &__icons{
+   margin-left: 30px;
     }
-
     &__privacy{
        display: flex;
        padding-top: 20px ;
@@ -150,7 +122,5 @@
        letter-spacing: 0.1em;
        text-transform: uppercase;
        color: $color-white;
-      
     }
-    
 }

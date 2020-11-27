@@ -21,7 +21,7 @@
         <div class="container">
             <div class="row header__spacebetween">
                 <div class="header__logo">
-                    <img src="./images/logo.svg" alt="logo">
+                    <a href="#"><img src="./images/logo.svg" alt="logo"></a>
                 </div>
                 <nav class="header__nav nav">
                     <ul class="nav__menu row">
@@ -50,6 +50,18 @@
         </div>
     </header>
     <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__items">
+                    <h1 class="hero__title">SURVIVE AT ALL COSTS</h1>
+                    <p class="hero__description">Experience new social battle royale game</p>
+                    <a href="#" class="hero__btn">
+                        <span class="hero__btn--line">Buy Now on Steam</span>
+                        <span>$14.99</span>
+                    </a>
+                </div>
+            </div>
+        </section>
         <section class="social">
             <div class="container row">
                 <div class="col-6">
@@ -90,6 +102,34 @@
                 </div>
             </div>
         </section>
+        <section class="features">
+            <div class="container">
+                <div class="col-5 features__items">
+                    <h2 class="features__subtitle">What’s so special?</h2>
+                    <p class="features__title">features</p>
+                    <div class="accordeon">
+                        <div class="accordeon__items">
+                            <h4 class="accordeon__title">SURVIVE AT ALL COSTS</h4>
+                            <p class="accordeon__description is-disable">You have 30 minutes to find a relic, signal for
+                                extraction, and grab
+                                one of three spots on the rescue chopper.</p>
+                        </div>
+                        <div class="accordeon__items">
+                            <h4 class="accordeon__title">CREATE ALLIES AND ENEMIES</h4>
+                            <p class="accordeon__description is-disable">You have 30 minutes to find a relic, signal for
+                                extraction, and grab
+                                one of three spots on the rescue chopper.</p>
+                        </div>
+                        <div class="accordeon__items">
+                            <h4 class="accordeon__title">IMPRESS THE AUDIENCE</h4>
+                            <p class="accordeon__description is-disable">You have 30 minutes to find a relic, signal for
+                                extraction, and grab
+                                one of three spots on the rescue chopper.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="system">
             <div class="container">
                 <div class="system__top">
@@ -100,7 +140,6 @@
                         system requirements
                     </h1>
                 </div>
-
                 <div class="system__content">
                     <div class="row">
                         <div class="system__columns col-6">
@@ -120,8 +159,8 @@
                             </p>
                         </div>
                         <div class=" system__columns col-6">
-                            <h6 class="system--title">storage:<h6 <p class="system--description">8 GB available space
-                                    </p>
+                            <h6 class="system--title">storage:</h6>
+                            <p class="system--description">8 GB available space</p>
                         </div>
                     </div>
                     <div class="system__columns col-12">
@@ -129,7 +168,94 @@
                         <p class="system--description">NVIDIA GeForce GTX 660 2GB or<br>
                             AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)</p>
                     </div>
-
+                </div>
+            </div>
+        </section>
+        <section class="quotess">
+            <div class="container">
+                <div class="row quotess__wrapper">
+                    <div class="col-6 quotess__items--left">
+                        <h3 class="quotess__subtitle">What people think?</h3>
+                        <h2 class="quotess__title">Press quotes</h2>
+                        <p class="quotess__description">
+                            Our goal is to create a product and service that you’re satisfied with and use it every day.
+                            This is why we’re constantly working on our services to make it better every day and really
+                            listen to what our users has to say.
+                        </p>
+                        <p class="quotess__btn">Read more testimonials</p>
+                    </div>
+                    <div class="col-6 quotess__items--right">
+                        <div class="quotess__block">
+                            <div class="row quotess__row">
+                                <img src="./images/1-person.svg" alt="person" class="quotess__img">
+                                <span class="quotess__shadow"></span>
+                                <div class="quotess__text">
+                                    <p class="quotess__name">Evan Lahti</p>
+                                    <p class="quotess__status">PC Gamer</p>
+                                </div>
+                                <a href="#">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none"  class="quotess__icon"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.3"
+                                            d="M18.3981 2.41449C17.7231 2.70013 17.0072 2.88765 16.2741 2.97084C17.0365 2.53297 17.623 1.84099 17.899 1.01526C17.1731 1.42694 16.3789 1.71699 15.5508 1.87286C14.8519 1.15947 13.8744 0.755389 12.8519 0.757085C10.8105 0.757085 9.15361 2.33909 9.15361 4.29061C9.15361 4.5679 9.18627 4.83816 9.25021 5.09623C6.17639 4.94862 3.45216 3.54236 1.62787 1.404C1.30934 1.92529 1.12764 2.53297 1.12764 3.18076C1.12764 4.40623 1.78024 5.48805 2.77231 6.12188C2.18494 6.10468 1.61046 5.95309 1.09706 5.67983V5.7249C1.09706 7.43659 2.37189 8.86495 4.06278 9.19027C3.5182 9.3312 2.94722 9.35187 2.39305 9.25072C2.86384 10.6549 4.22998 11.6764 5.8475 11.7061C4.5821 12.6524 2.98781 13.2184 1.25483 13.2184C0.960153 13.2181 0.66574 13.2015 0.373047 13.1689C2.00943 14.1713 3.95365 14.7571 6.04185 14.7571C12.8438 14.7571 16.5627 9.37118 16.5627 4.70056C16.5627 4.54779 16.5627 4.39502 16.5513 4.24335C17.2749 3.74295 17.8998 3.12372 18.3969 2.41449H18.3981Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <p class="quotess__quote">“One of my gaming highlights of the year.”</p>
+                            <time class="quotess__data">October 18, 2018</time>
+                        </div>
+                        <div class="quotess__block">
+                            <div class="row quotess__row">
+                                <img src="./images/2-person.svg" alt="person" class="quotess__img">
+                                <span class="quotess__shadow"></span> 
+                                <a href="#">
+                                    <svg width="19" height="15" viewBox="0 0 19 15"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.3"
+                                        d="M18.3981 2.41449C17.7231 2.70013 17.0072 2.88765 16.2741 2.97084C17.0365 2.53297 17.623 1.84099 17.899 1.01526C17.1731 1.42694 16.3789 1.71699 15.5508 1.87286C14.8519 1.15947 13.8744 0.755389 12.8519 0.757085C10.8105 0.757085 9.15361 2.33909 9.15361 4.29061C9.15361 4.5679 9.18627 4.83816 9.25021 5.09623C6.17639 4.94862 3.45216 3.54236 1.62787 1.404C1.30934 1.92529 1.12764 2.53297 1.12764 3.18076C1.12764 4.40623 1.78024 5.48805 2.77231 6.12188C2.18494 6.10468 1.61046 5.95309 1.09706 5.67983V5.7249C1.09706 7.43659 2.37189 8.86495 4.06278 9.19027C3.5182 9.3312 2.94722 9.35187 2.39305 9.25072C2.86384 10.6549 4.22998 11.6764 5.8475 11.7061C4.5821 12.6524 2.98781 13.2184 1.25483 13.2184C0.960153 13.2181 0.66574 13.2015 0.373047 13.1689C2.00943 14.1713 3.95365 14.7571 6.04185 14.7571C12.8438 14.7571 16.5627 9.37118 16.5627 4.70056C16.5627 4.54779 16.5627 4.39502 16.5513 4.24335C17.2749 3.74295 17.8998 3.12372 18.3969 2.41449H18.3981Z"
+                                        fill="white" />
+                                </svg>
+                                </a>
+                                <div class="quotess__text">
+                                    <p class="quotess__name">Jada Griffin </p>
+                                    <p class="quotess__status">Nerdreactor</p>
+                                </div>
+                                <a href="#">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" class="quotess__icon"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.3"
+                                            d="M18.3981 2.41449C17.7231 2.70013 17.0072 2.88765 16.2741 2.97084C17.0365 2.53297 17.623 1.84099 17.899 1.01526C17.1731 1.42694 16.3789 1.71699 15.5508 1.87286C14.8519 1.15947 13.8744 0.755389 12.8519 0.757085C10.8105 0.757085 9.15361 2.33909 9.15361 4.29061C9.15361 4.5679 9.18627 4.83816 9.25021 5.09623C6.17639 4.94862 3.45216 3.54236 1.62787 1.404C1.30934 1.92529 1.12764 2.53297 1.12764 3.18076C1.12764 4.40623 1.78024 5.48805 2.77231 6.12188C2.18494 6.10468 1.61046 5.95309 1.09706 5.67983V5.7249C1.09706 7.43659 2.37189 8.86495 4.06278 9.19027C3.5182 9.3312 2.94722 9.35187 2.39305 9.25072C2.86384 10.6549 4.22998 11.6764 5.8475 11.7061C4.5821 12.6524 2.98781 13.2184 1.25483 13.2184C0.960153 13.2181 0.66574 13.2015 0.373047 13.1689C2.00943 14.1713 3.95365 14.7571 6.04185 14.7571C12.8438 14.7571 16.5627 9.37118 16.5627 4.70056C16.5627 4.54779 16.5627 4.39502 16.5513 4.24335C17.2749 3.74295 17.8998 3.12372 18.3969 2.41449H18.3981Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <p class="quotess__quote">“The next big thing in the world of streaming and survival games.”
+                            </p>
+                            <time class="quotess__data">December 21, 2018</time>
+                        </div>
+                        <div class="quotess__block">
+                            <div class="row quotess__row">
+                                <img src="./images/3-person.svg" alt="person" class="quotess__img">
+                                <span class="quotess__shadow"></span>
+                                <div class="quotess__text">
+                                    <p class="quotess__name">Aaron Williams </p>
+                                    <p class="quotess__status">Uproxx</p>
+                                </div>
+                                <a href="#">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" class="quotess__icon"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.3"
+                                            d="M18.3981 2.41449C17.7231 2.70013 17.0072 2.88765 16.2741 2.97084C17.0365 2.53297 17.623 1.84099 17.899 1.01526C17.1731 1.42694 16.3789 1.71699 15.5508 1.87286C14.8519 1.15947 13.8744 0.755389 12.8519 0.757085C10.8105 0.757085 9.15361 2.33909 9.15361 4.29061C9.15361 4.5679 9.18627 4.83816 9.25021 5.09623C6.17639 4.94862 3.45216 3.54236 1.62787 1.404C1.30934 1.92529 1.12764 2.53297 1.12764 3.18076C1.12764 4.40623 1.78024 5.48805 2.77231 6.12188C2.18494 6.10468 1.61046 5.95309 1.09706 5.67983V5.7249C1.09706 7.43659 2.37189 8.86495 4.06278 9.19027C3.5182 9.3312 2.94722 9.35187 2.39305 9.25072C2.86384 10.6549 4.22998 11.6764 5.8475 11.7061C4.5821 12.6524 2.98781 13.2184 1.25483 13.2184C0.960153 13.2181 0.66574 13.2015 0.373047 13.1689C2.00943 14.1713 3.95365 14.7571 6.04185 14.7571C12.8438 14.7571 16.5627 9.37118 16.5627 4.70056C16.5627 4.54779 16.5627 4.39502 16.5513 4.24335C17.2749 3.74295 17.8998 3.12372 18.3969 2.41449H18.3981Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <p class="quotess__quote">“Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”
+                            </p>
+                            <time class="quotess__data">December 24, 2018</time>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -205,6 +331,7 @@
     </footer>
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="./js/click.js"></script>
     <script src="./js/index.js"></script>
 </body>
 

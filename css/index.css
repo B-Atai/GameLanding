@@ -88,6 +88,11 @@ span {
   .header__items .languages::before {
     display: none;
   }
+  .header__items .languages__drop {
+    display: flex;
+    flex-direction: column;
+    left: -5px;
+  }
   .header__items .languages__main {
     margin-top: 10px;
     margin-right: 80px;
@@ -107,6 +112,18 @@ span {
     display: block !important;
     z-index: 2;
   }
+  .is-active {
+    display: block !important;
+    animation: 1s moving 0s forwards;
+  }
+  @keyframes moving {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   .hero__title {
     font-size: 40px !important;
   }
@@ -116,8 +133,25 @@ span {
   .hero__content {
     margin-top: 80% !important;
   }
+  .hero__arrow {
+    margin-bottom: 60px !important;
+  }
   .social .col-6 {
     width: 100%;
+  }
+  .social__items {
+    margin: 50px 0;
+  }
+  .social__title {
+    font-size: 33px !important;
+  }
+  .social__bottom {
+    width: 100% !important;
+    text-align: start !important;
+    margin: 20px 0 0 0 !important;
+  }
+  .social .slider {
+    display: none;
   }
 }
 
@@ -192,11 +226,6 @@ span {
 .languages__main {
   margin-right: 36px;
   position: relative;
-  border-bottom: 2px solid transparent;
-}
-
-.languages__main:hover {
-  border-bottom: 2px solid #FFB548;
 }
 
 .languages__main::before, .languages__main::after {
@@ -249,12 +278,11 @@ span {
 }
 
 .languages__drop.is-on {
-  display: block;
   animation: 1s fall 0s forwards;
 }
 
 .languages__drop.is-off {
-  display: none;
+  display: none !important;
 }
 
 @keyframes fall {
@@ -262,7 +290,7 @@ span {
     top: -200px;
   }
   100% {
-    top: 23px;
+    top: 30px;
   }
 }
 
@@ -283,6 +311,7 @@ span {
   position: absolute;
   height: 20px;
   width: 25px;
+  cursor: pointer;
 }
 
 .burger__icon span, .burger__icon::before, .burger__icon::after {
@@ -448,7 +477,7 @@ span {
 
 .social {
   display: flex;
-  min-height: 1050px;
+  min-height: 100vh;
   width: 100%;
   background: url(../images/social-background.png);
   background-repeat: no-repeat;
@@ -460,10 +489,6 @@ span {
 
 .social__items {
   align-items: center;
-}
-
-.social__block {
-  padding-left: 50px;
 }
 
 .social__subtitle {
@@ -483,23 +508,30 @@ span {
   border-bottom: 2px solid #fff;
 }
 
+.social__items {
+  margin: 0 -18px;
+}
+
+.social__block {
+  padding: 0 18px;
+}
+
+.social__bottom {
+  width: 77%;
+  text-align: justify;
+  margin: 60px 0 0 auto;
+}
+
 .social__description {
   font-family: "Open Sans";
   font-size: 18px;
   font-weight: 400;
-  padding: 80px;
   line-height: 22px;
-  justify-content: flex-end;
-}
-
-.social__bottom {
-  display: flex;
-  justify-content: flex-end;
 }
 
 .social img {
-  min-height: 100%;
   min-width: 100%;
+  min-height: 100%;
 }
 
 .features {

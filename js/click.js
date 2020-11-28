@@ -28,3 +28,16 @@ const accordeon = () => {
         })
     }
 accordeon();
+
+
+const burgerbtn = document.getElementById("burger__icon");
+const burgeractive = document.getElementById("burger");
+function move() {
+    burgerbtn.addEventListener('click', function (){
+        burgeractive.classList.toggle('is-active')
+    });
+    langbtn.addEventListener('click', function (){
+        burgeractive.classList.remove('is-active')
+    });
+};
+move();

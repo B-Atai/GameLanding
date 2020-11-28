@@ -7,21 +7,28 @@
     top: 0;
     width: 100%;
     z-index: -1;
-    min-height: 960px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     &__items{
         text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    &__content{
+        margin-top: 30%;
     }
     &__title{
         @include font($font-babue, 80px);
         color: $color-white;
+        letter-spacing: 3px;
         line-height: 1;
     }
     &__description{
         @include font($font-babue, 24px);
         color: $color-white;
+        letter-spacing: 2px;
         padding: 21px 0 38px;
     }
     &__btn{
@@ -45,7 +52,7 @@
                 position: absolute;
                 right: 82px;
                 top: 16px;
-                width: 1px;
+                width: 2px;
                 height: 30px;
                 background-color: #1A1917;
                 opacity: 0.5;
@@ -54,10 +61,37 @@
         }
         &:hover{
             background-color: #1A1917;
-            span,
-            .hero__btn--line{
+            span{
                 color: $color-orange;
             }
+            .hero__btn--line{
+                &::before{
+                    background-color: $color-orange;
+                }
+            }
+        }
+    }
+    &__arrow{
+        margin-top: auto;
+        margin-bottom: 100px;
+        position: relative;
+    }
+    &__link{
+        @include font($font-open, 12px);
+        text-transform: uppercase;  
+        color: $color-white;
+        &:hover{
+            color: $color-orange;
+        }
+    }
+    &__scroll{
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        stroke: white;
+        &:hover{
+            stroke: $color-orange;
         }
     }
 }

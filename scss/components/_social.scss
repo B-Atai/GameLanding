@@ -1,42 +1,35 @@
 .social{
     display: flex;
-    height: 1051px;   
-    background: url(../images/social-background.png);  
+    min-height: 1050px;  
+    width: 100%; 
+    background: url(../images/social-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
     color: $color-white;
     letter-spacing: 2px;
-    
-    &__subtitle{
-        @include font($font-open, 24px, 700);
-        padding-top: 295px;
-        text-transform: uppercase;
-      
-       
+    &__items{
+        align-items: center;
     }
-    
+    &__block{
+        padding-left: 50px;
+    }
+    &__subtitle{
+        @include font($font-babue, 24px);
+        text-transform: uppercase;
+    }
     &__title{
-        @include font($font-open, 60px, 700);
+        @include font($font-babue, 60px);
         line-height: 60px;  
         text-transform: uppercase;  
-        position: relative;
-        &::before{
-            content: '';
-             position: absolute;
-             width: 460px;
-             height: 2.99px;
-             background: #FFFFFF;
-             border-radius: 4px;   
-             bottom: -30px;
-             left: 0;
-             z-index: 2;
-        }
-         
+        padding-bottom: 22px;
+        border-bottom: 2px solid $color-white;
     }
     &__description{
         @include font($font-open, 18px, 400);
         padding: 80px;
         line-height: 22px;
         justify-content: flex-end;
-       
     }
     &__bottom{
         display: flex;
@@ -44,12 +37,7 @@
     }
     img{
         min-height: 100%;
-        padding-top: 190px;
-        width: 100%;
-    }
-    img{
-        width: 100%;
-        padding-top: 190px;
+        min-width: 100%;
     }
 
 }

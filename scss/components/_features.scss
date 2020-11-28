@@ -2,8 +2,8 @@
     background-image: url('../../images/features.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: -10px 0;
     min-height: 870px;
-    width: 100%;
     z-index: 1;
     display: flex;
     justify-content: flex-end;
@@ -81,7 +81,6 @@
             background-color: $color-white;
         }
         &::after{
-            opacity: 1;
             animation: 1s linedrop 0s forwards;
         }
         @keyframes linedrop {

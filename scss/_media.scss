@@ -108,7 +108,7 @@
         .accordeon{
             margin-left: 50px;
             &__title{
-                font-size: 33px;
+                font-size: 32px;
             }
         }
     }
@@ -172,6 +172,15 @@
         &__right{
             margin: 0 !important;
         }
+        &__subtitle{
+            font-size: 18px !important;
+        }
+        &__title{
+            font-size: 50px !important;
+        }
+        &__description{
+            font-size: 15px !important;
+        }
         &__title,
         &__subtitle,
         &__description{
@@ -222,6 +231,28 @@
             &__menu li {
                 padding:0 30px;
             }
+        }
+    }
+}
+@media screen and (max-width : 376px){
+    .accordeon{
+        &__title{
+            &::after{
+                height: 138px !important;
+            }
+        }
+    }
+    .subscribe{
+        .col-7{
+            width: 100%;
+        }
+        &__title,
+        &__subtitle,
+        &__description{
+            width: 100%;
+        }
+        &::before{
+            display: none;
         }
     }
 }

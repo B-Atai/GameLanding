@@ -171,7 +171,7 @@ span {
     margin-left: 50px;
   }
   .features .accordeon__title {
-    font-size: 33px;
+    font-size: 32px;
   }
   .system {
     padding: 50px 0;
@@ -230,6 +230,15 @@ span {
   .subscribe__right {
     margin: 0 !important;
   }
+  .subscribe__subtitle {
+    font-size: 18px !important;
+  }
+  .subscribe__title {
+    font-size: 50px !important;
+  }
+  .subscribe__description {
+    font-size: 15px !important;
+  }
   .subscribe__title, .subscribe__subtitle, .subscribe__description {
     width: 80%;
     margin-left: auto;
@@ -272,6 +281,21 @@ span {
   }
   .footer .nav__menu li {
     padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .accordeon__title::after {
+    height: 138px !important;
+  }
+  .subscribe .col-7 {
+    width: 100%;
+  }
+  .subscribe__title, .subscribe__subtitle, .subscribe__description {
+    width: 100%;
+  }
+  .subscribe::before {
+    display: none;
   }
 }
 

@@ -1,7 +1,99 @@
-@media screen and (max-width : 415px){
+@media screen and (max-width : 768px){
     .container{
-        padding: 0 20px;
+        padding: 0 30px;
     }
+    .header{
+        &__icons{
+            display: none;
+        }
+        nav{
+            width: 70%;
+        }
+    }
+    .hero{
+        &__content{
+            margin-top: 60% !important;
+        }
+    }
+    .social{
+        &__bottom{
+            width: 100% !important;
+        }
+        .col-6{
+            width: 100%;
+        }
+        .slider{
+            display: none;
+        }
+    }
+    .features{
+        &__items{
+            margin-left: 50px !important;
+        }
+        .accordeon{
+            &__title{
+                font-size: 34px !important;
+            }
+        }
+    }
+    .system{
+        padding: 50px 0;
+        &__content{
+            width: 100%;
+        }
+    }
+    .quotess{
+        padding: 50px 0;
+        .col-6{
+            width: 100%;
+        }
+        &__items{
+            &--left{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        &__title{
+            margin: 0 !important; 
+        }
+        &__description{
+            text-align: center;
+            width: 100% !important;
+            margin: 10px 0 30px !important;
+        }
+        &__btn{
+            margin-bottom: 40px;
+        }
+        &__block{
+            width: 100% !important;
+            margin:0 0 30px !important;
+        }
+    }
+    .subscribe{
+        .col-7{
+            width: 100%;
+        }
+        &::before{
+            left: -150px !important;
+        }
+        &__title,
+        &__subtitle,
+        &__description{
+            width: 100%;
+        }
+        &__form{
+            flex-wrap: wrap;
+        }
+        &__email{
+            margin-right: 0;
+        }
+        &__submit{
+            padding: 15px 0;
+        }
+    }
+}
+@media screen and (max-width : 415px){
     .header{
         &__spacebetween{
             display: flex;
@@ -33,9 +125,6 @@
                     }
                 }
             }
-        }
-        &__icons{
-            display: none;
         }
     }
     .burger{
@@ -74,9 +163,6 @@
         }
     }
     .social{
-        .col-6{
-            width: 100%;
-        }
         &__items{
             margin: 50px 0;
         }
@@ -84,12 +170,8 @@
             font-size: 33px !important;
         }
         &__bottom{
-            width: 100% !important;
             text-align: start !important;
             margin: 20px 0 0 0 !important;
-        }
-        .slider{
-            display: none;
         }
     }
     .features{
@@ -113,10 +195,6 @@
         }
     }
     .system{
-        padding: 50px 0;
-        .col-6{
-            width: 100%;
-        }
         .col-12{
             width: 100% !important;
         }
@@ -134,32 +212,8 @@
         }
     }
     .quotess{
-        padding: 50px 0;
-        .col-6{
-            width: 100%;
-        }
-        &__items{
-            &--left{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-        }
         &__title{
             font-size: 50px!important;
-            margin: 0 !important; 
-        }
-        &__description{
-            text-align: center;
-            width: 100% !important;
-            margin: 10px 0 30px !important;
-        }
-        &__btn{
-            margin-bottom: 40px;
-        }
-        &__block{
-            width: 100% !important;
-            margin:0 0 30px !important;
         }
     }
     .subscribe{
@@ -254,5 +308,48 @@
         &::before{
             display: none;
         }
+    }
+}
+@media screen and (max-width : 364px){
+    .accordeon{
+        &__title{
+            &::after{
+                height: 138px !important;
+            }
+        }
+    }
+    .accordeon{
+        &__title{
+            font-size: 26px !important;
+            &::after{
+                height: 135px !important;
+            }
+        }
+    }
+}
+@media screen and (max-width : 321px){
+    .hero{
+        &__content{
+            margin-top: 60% !important;
+        }
+    }
+    .social{
+        &__subtitle{
+            font-size: 18px !important;
+        }
+        &__title{
+            font-size: 26px !important;
+        }
+        &__description{
+            font-size: 14px !important;
+        }
+    }
+    .features{
+       &__subtitle{
+            font-size: 20px !important;
+        }
+        &__title{
+            font-size: 50px !important;
+        } 
     }
 }

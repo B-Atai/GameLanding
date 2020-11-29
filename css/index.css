@@ -36,6 +36,33 @@ span {
   min-width: 0;
 }
 
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #FFB548;
+  top: 0%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay h1 {
+  font-family: "BebasNeueBold";
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 20px;
+}
+
+.overlay span {
+  font-family: "BebasNeueBold";
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
 @font-face {
   font-family: "BebasNeueBold";
   src: url("../fonts/ofontruBebasNeue.woff") format("woff"), url("../fonts/ofontruBebasNeue.woff2") format("woff2");
@@ -71,10 +98,87 @@ span {
   width: 100%;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 768px) {
   .container {
-    padding: 0 20px;
+    padding: 0 30px;
   }
+  .header__icons {
+    display: none;
+  }
+  .header nav {
+    width: 70%;
+  }
+  .hero__content {
+    margin-top: 60% !important;
+  }
+  .social__bottom {
+    width: 100% !important;
+  }
+  .social .col-6 {
+    width: 100%;
+  }
+  .social .slider {
+    display: none;
+  }
+  .features__items {
+    margin-left: 50px !important;
+  }
+  .features .accordeon__title {
+    font-size: 34px !important;
+  }
+  .system {
+    padding: 50px 0;
+  }
+  .system__content {
+    width: 100%;
+  }
+  .quotess {
+    padding: 50px 0;
+  }
+  .quotess .col-6 {
+    width: 100%;
+  }
+  .quotess__items--left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .quotess__title {
+    margin: 0 !important;
+  }
+  .quotess__description {
+    text-align: center;
+    width: 100% !important;
+    margin: 10px 0 30px !important;
+  }
+  .quotess__btn {
+    margin-bottom: 40px;
+  }
+  .quotess__block {
+    width: 100% !important;
+    margin: 0 0 30px !important;
+  }
+  .subscribe .col-7 {
+    width: 100%;
+  }
+  .subscribe::before {
+    left: -150px !important;
+  }
+  .subscribe__title, .subscribe__subtitle, .subscribe__description {
+    width: 100%;
+  }
+  .subscribe__form {
+    flex-wrap: wrap;
+  }
+  .subscribe__email {
+    margin-right: 0;
+  }
+  .subscribe__submit {
+    padding: 15px 0;
+  }
+}
+
+@media screen and (max-width: 415px) {
   .header__spacebetween {
     display: flex;
     align-items: flex-start !important;
@@ -99,9 +203,6 @@ span {
   }
   .header__items .languages__main span {
     font-size: 14px;
-  }
-  .header__icons {
-    display: none;
   }
   .burger {
     z-index: 1;
@@ -136,9 +237,6 @@ span {
   .hero__arrow {
     margin-bottom: 60px !important;
   }
-  .social .col-6 {
-    width: 100%;
-  }
   .social__items {
     margin: 50px 0;
   }
@@ -146,12 +244,8 @@ span {
     font-size: 33px !important;
   }
   .social__bottom {
-    width: 100% !important;
     text-align: start !important;
     margin: 20px 0 0 0 !important;
-  }
-  .social .slider {
-    display: none;
   }
   .features {
     background-position: -200px 0 !important;
@@ -173,12 +267,6 @@ span {
   .features .accordeon__title {
     font-size: 32px;
   }
-  .system {
-    padding: 50px 0;
-  }
-  .system .col-6 {
-    width: 100%;
-  }
   .system .col-12 {
     width: 100% !important;
   }
@@ -194,32 +282,8 @@ span {
   .system__content {
     padding-top: 20px !important;
   }
-  .quotess {
-    padding: 50px 0;
-  }
-  .quotess .col-6 {
-    width: 100%;
-  }
-  .quotess__items--left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .quotess__title {
     font-size: 50px !important;
-    margin: 0 !important;
-  }
-  .quotess__description {
-    text-align: center;
-    width: 100% !important;
-    margin: 10px 0 30px !important;
-  }
-  .quotess__btn {
-    margin-bottom: 40px;
-  }
-  .quotess__block {
-    width: 100% !important;
-    margin: 0 0 30px !important;
   }
   .subscribe .col-7 {
     width: 100%;
@@ -299,6 +363,39 @@ span {
   }
 }
 
+@media screen and (max-width: 364px) {
+  .accordeon__title::after {
+    height: 138px !important;
+  }
+  .accordeon__title {
+    font-size: 26px !important;
+  }
+  .accordeon__title::after {
+    height: 135px !important;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .hero__content {
+    margin-top: 60% !important;
+  }
+  .social__subtitle {
+    font-size: 18px !important;
+  }
+  .social__title {
+    font-size: 26px !important;
+  }
+  .social__description {
+    font-size: 14px !important;
+  }
+  .features__subtitle {
+    font-size: 20px !important;
+  }
+  .features__title {
+    font-size: 50px !important;
+  }
+}
+
 .header {
   padding: 21px 0;
   position: absolute;
@@ -328,7 +425,7 @@ span {
 }
 
 .nav {
-  min-width: 50%;
+  width: 50%;
 }
 
 .nav__menu {
@@ -698,6 +795,7 @@ span {
   font-size: 24px;
   font-weight: 700;
   color: #fff;
+  padding-top: 60px;
 }
 
 .features__title {
@@ -742,7 +840,7 @@ span {
   opacity: 0;
   content: '';
   position: absolute;
-  height: 140px;
+  height: 141px;
   width: 3px;
   top: 19px;
   left: -26px;
@@ -754,6 +852,7 @@ span {
   font-size: 18px;
   font-weight: 700;
   color: #fff;
+  padding-left: 10px;
 }
 
 .accordeon .is-disable {

@@ -598,7 +598,7 @@ span {
 }
 
 .hero {
-  background-image: url("../../images/header-background.png");
+  background-image: url("../images/header-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -776,7 +776,7 @@ span {
 }
 
 .features {
-  background-image: url("../../images/features.png");
+  background-image: url("../images/features.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
@@ -1118,7 +1118,7 @@ span {
 .subscribe::before {
   content: '';
   position: absolute;
-  background-image: url("../../images/monument.png");
+  background-image: url("../images/monument.png");
   background-repeat: no-repeat;
   height: 90%;
   width: 100%;

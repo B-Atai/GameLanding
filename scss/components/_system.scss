@@ -2,16 +2,14 @@
     display: flex;
     background: url('../images/requirements.png') center  no-repeat ;
     background-size: cover;
-    min-height: 960px;
+    min-height: 100vh;
     &__top{
         text-transform: uppercase;
         color: $color-white;
         text-align: center;
-        margin-top: -250px;
     }
     &__content{
-        width: 50%;
-        padding-top: 145px;
+        padding-top: 120px;
     }
     &__subtitle{
         @include font($font-babue, 24px);

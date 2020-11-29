@@ -92,4 +92,136 @@
             display: none;
         }
     }
+    .features{
+        background-position: -200px 0 !important;
+        &__items{
+            width: 100%;
+        }
+        &__subtitle{
+            font-size: 22px !important;
+            margin-left: 20px;
+        }
+        &__title{
+            font-size: 60px !important;
+            margin-left: 20px;
+        }
+        .accordeon{
+            margin-left: 50px;
+            &__title{
+                font-size: 33px;
+            }
+        }
+    }
+    .system{
+        padding: 50px 0;
+        .col-6{
+            width: 100%;
+        }
+        .col-12{
+            width: 100% !important;
+        }
+        &__columns{
+            width: 50% !important; 
+        }
+        &__subtitle{
+            font-size: 20px !important;
+        }  
+        &__title{
+            font-size: 40px !important;
+        }
+        &__content{
+            padding-top: 20px !important;
+        }
+    }
+    .quotess{
+        padding: 50px 0;
+        .col-6{
+            width: 100%;
+        }
+        &__items{
+            &--left{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        &__title{
+            font-size: 50px!important;
+            margin: 0 !important; 
+        }
+        &__description{
+            text-align: center;
+            width: 100% !important;
+            margin: 10px 0 30px !important;
+        }
+        &__btn{
+            margin-bottom: 40px;
+        }
+        &__block{
+            width: 100% !important;
+            margin:0 0 30px !important;
+        }
+    }
+    .subscribe{
+        .col-7{
+            width: 100%;
+        }
+        &::before{
+            left: -200px !important;
+        }
+        &__right{
+            margin: 0 !important;
+        }
+        &__title,
+        &__subtitle,
+        &__description{
+            width: 80%;
+            margin-left: auto;
+        }
+        &__form{
+            flex-wrap: wrap;
+        }
+        &__email{
+            margin-right: 0;
+        }
+        .col-8,
+        .col-4{
+            width: 100%;
+        }
+        &__input{
+            width: 100% !important;
+            margin-bottom: 20px;
+        }
+        &__submit{
+            padding: 15px 0;
+        }
+    }
+    .footer{
+        &__top{
+            justify-content: center !important;
+        }
+        &__logo{
+            margin-top: 20px;
+        }
+        &__bottom{
+            text-align: center;
+            &--left,
+            &--right{
+                width: 100%;
+                padding-top: 10px;
+            }
+        }
+        .nav{
+            width: 100%;
+            // &__menu li:nth-child(2n){
+            //     padding:0 30px;
+            // }
+            &__menu{
+                margin: 20px -20px;
+            }
+            &__menu li {
+                padding:0 30px;
+            }
+        }
+    }
 }

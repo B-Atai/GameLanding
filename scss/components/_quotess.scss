@@ -1,16 +1,12 @@
 .quotess{
-    min-height: 960px;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     background-color: $color-black;
     &__items{
         &--left{
-            display: block;
             margin: auto 0;
         }
-    }
-    &__wrapper{
-        height: 100%;
     }
     &__subtitle{
         @include font($font-babue, 24px);

@@ -205,6 +205,7 @@ span {
     font-size: 14px;
   }
   .burger {
+    position: fixed;
     z-index: 1;
   }
   .burger__icon {
@@ -265,7 +266,7 @@ span {
     margin-left: 50px;
   }
   .features .accordeon__title {
-    font-size: 32px;
+    font-size: 32px !important;
   }
   .system .col-12 {
     width: 100% !important;
@@ -537,19 +538,19 @@ span {
 
 .burger {
   display: none;
-  position: absolute;
   right: 0;
   top: 0;
   background-color: #080A0B;
   border-radius: 0 0 0 20px;
   opacity: 0.9;
   height: 50vh;
-  width: 50vw;
+  width: 70vw;
 }
 
 .burger__icon {
   display: none;
-  position: absolute;
+  position: fixed;
+  margin: 0 10px;
   height: 20px;
   width: 25px;
   cursor: pointer;

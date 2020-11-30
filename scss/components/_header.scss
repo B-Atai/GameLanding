@@ -117,17 +117,17 @@
 
 .burger{
     display: none;
-    position: absolute;
     right: 0;
     top: 0;
     background-color: $color-black;
     border-radius: 0 0 0 20px ;
     opacity: 0.9;
     height: 50vh;
-    width: 50vw;
+    width: 70vw;
     &__icon{
         display: none;
-        position: absolute;
+        position: fixed;
+        margin:0 10px;
         height: 20px;
         width: 25px;
         cursor: pointer;

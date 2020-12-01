@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./images/logo.svg">
     <title>GameLanding</title>
 </head>
 
@@ -18,16 +20,16 @@
     <header class="header">
         <div class="container">
             <div class="row header__spacebetween">
-                <div class="header__logo">
+                <div class="header__logo fadeInDownBig">
                     <a href="#"><img src="./images/logo.svg" alt="logo"></a>
                 </div>
                 <nav class="header__nav nav">
                     <ul class="nav__menu row">
-                        <li><a href="#" class="nav__links">MAIN</a></li>
-                        <li><a href="#" class="nav__links">about</a></li>
-                        <li><a href="#" class="nav__links">game features</a></li>
-                        <li><a href="#" class="nav__links">System requirements</a></li>
-                        <li><a href="#" class="nav__links">quotes</a></li>
+                        <li><a href="#hero" class="nav__links wow fadeInLeft ">MAIN</a></li>
+                        <li><a href="#social" class="nav__links">about</a></li>
+                        <li><a href="#features" class="nav__links">game features</a></li>
+                        <li><a href="#system" class="nav__links">System requirements</a></li>
+                        <li><a href="#quotess" class="nav__links">quotes</a></li>
                     </ul>
                 </nav>
                 <div class="header__items row">
@@ -49,18 +51,18 @@
                 </div>
                 <div class="burger" id="burger">
                     <div class="burger__menu">
-                        <li><a href="" class="burger__link">MAIN</a></li>
-                        <li><a href="" class="burger__link">about</a></li>
-                        <li><a href="" class="burger__link">game features</a></li>
-                        <li><a href="" class="burger__link">System requirements</a></li>
-                        <li><a href="" class="burger__link">quotes</a></li>
+                        <li><a href="#hero" class="burger__link">MAIN</a></li>
+                        <li><a href="#social" class="burger__link">about</a></li>
+                        <li><a href="#features" class="burger__link">game features</a></li>
+                        <li><a href="#system" class="burger__link">System requirements</a></li>
+                        <li><a href="#quotess" class="burger__link">quotes</a></li>
                     </div>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="container">
                 <div class="hero__items">
                     <div class="hero__content">
@@ -72,18 +74,18 @@
                         </a>
                     </div>
                     <div class="hero__arrow">
-                        <a href="#" class="hero__link">
+                        <!-- 888zzmm -->
+                        <a href="https://www.instagram.com/888zzmm/?igshid=1nylk6e6f3twn" class="hero__link">
                             <p>the story</p> 
                             <svg class="hero__scroll" width="23" height="12" viewBox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M21.5786 1.83362H1.32422L11.338 10.0027L21.5786 1.83362Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </a>
-                        
                     </div>
                 </div>
             </div>
         </section>
-        <section class="social">
+        <section class="social" id="social">
             <div class="container">
                 <div class="row social__items">
                     <div class="col-6 social__block">
@@ -118,7 +120,7 @@
                 </div>
             </div>
         </section>
-        <section class="features">
+        <section class="features" id="features">
             <div class="container">
                 <div class="col-5 features__items">
                     <h2 class="features__subtitle">What’s so special?</h2>
@@ -146,7 +148,7 @@
                 </div>
             </div>
         </section>
-        <section class="system">
+        <section class="system" id="system">
             <div class="container">
                 <div class="system__top">
                     <h3 class="system__subtitle">
@@ -187,7 +189,7 @@
                 </div>
             </div>
         </section>
-        <section class="quotess">
+        <section class="quotess" id="quotess">
             <div class="container">
                 <div class="row">
                     <div class="col-6 quotess__items--left">
@@ -248,7 +250,7 @@
                 </div>
             </div>
         </section>
-        <section class="subscribe">
+        <section class="subscribe" id="subscribe">
             <div class="container">
                 <div class="row subscribe__items">
                     <div class="col-7 subscribe__right">
@@ -304,6 +306,7 @@
             
     <script src="./js/vendors/jquery-3.5.1.min.js"></script>
     <script src="./js/vendors/slick.min.js"></script>
+    <!-- <script src="./js/vendors/wow.min.js"></script> -->
     <script src="./js/vendors/TweenMax.min.js"></script>
     <script src="./js/click.js"></script>
     <script src="./js/index.js"></script>

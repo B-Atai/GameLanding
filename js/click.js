@@ -36,8 +36,5 @@ function move() {
     burgerbtn.addEventListener('click', function (){
         burgeractive.classList.toggle('is-active')
     });
-    langbtn.addEventListener('click', function (){
-        burgeractive.classList.remove('is-active')
-    });
 };
 move();

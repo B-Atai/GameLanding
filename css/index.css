@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -121,10 +125,13 @@ span {
     display: none;
   }
   .features__items {
-    margin-left: 50px !important;
+    width: 100%;
+  }
+  .features .accordeon {
+    margin-left: 50px;
   }
   .features .accordeon__title {
-    font-size: 34px !important;
+    font-size: 30px;
   }
   .system {
     padding: 50px 0;
@@ -251,22 +258,17 @@ span {
   .features {
     background-position: -200px 0 !important;
   }
-  .features__items {
-    width: 100%;
-  }
   .features__subtitle {
     font-size: 22px !important;
-    margin-left: 20px;
   }
   .features__title {
     font-size: 60px !important;
-    margin-left: 20px;
-  }
-  .features .accordeon {
-    margin-left: 50px;
   }
   .features .accordeon__title {
-    font-size: 32px !important;
+    font-size: 28px;
+  }
+  .features .accordeon__description {
+    font-size: 16px;
   }
   .system .col-12 {
     width: 100% !important;
@@ -351,7 +353,7 @@ span {
 
 @media screen and (max-width: 376px) {
   .accordeon__title::after {
-    height: 138px !important;
+    height: 136px;
   }
   .subscribe .col-7 {
     width: 100%;
@@ -365,18 +367,15 @@ span {
 }
 
 @media screen and (max-width: 364px) {
-  .accordeon__title::after {
-    height: 138px !important;
-  }
   .accordeon__title {
-    font-size: 26px !important;
+    font-size: 24px !important;
   }
   .accordeon__title::after {
-    height: 135px !important;
+    height: 134px !important;
   }
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 320px) {
   .hero__content {
     margin-top: 60% !important;
   }
@@ -538,10 +537,10 @@ span {
 
 .burger {
   display: none;
-  right: 0;
-  top: 0;
   background-color: #080A0B;
   border-radius: 0 0 0 20px;
+  top: 0;
+  right: 0;
   opacity: 0.9;
   height: 50vh;
   width: 70vw;
@@ -550,7 +549,8 @@ span {
 .burger__icon {
   display: none;
   position: fixed;
-  margin: 0 10px;
+  right: 20px;
+  top: 35px;
   height: 20px;
   width: 25px;
   cursor: pointer;
@@ -841,7 +841,7 @@ span {
   opacity: 0;
   content: '';
   position: absolute;
-  height: 141px;
+  height: 136px;
   width: 3px;
   top: 19px;
   left: -26px;
